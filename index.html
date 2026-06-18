@@ -2,10 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <script src="https://tailwindcss.com"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Read All You Need</title>
+  <!-- FIX 1: Correct Tailwind CDN script link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FIX 2: Correct Google Fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
   <link href="https://googleapis.com" rel="stylesheet">
+  
   <style>
     body { font-family: 'Fredoka', sans-serif; }
     .ghost-float { animation: float 3s ease-in-out infinite; }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-15px) rotate(3deg); }
+    }
   </style>
 </head>
